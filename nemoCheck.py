@@ -40,14 +40,14 @@ def ping_ips():
 # send a message to a discord channel via a webhook
 def send_message(message):
     # discord webhook url:
-    url = "https://discord.com/api/webhooks/984793884498468894/Wgp-W0RVkJPLg6FVareuDWvu2aHanpLjBMl6dWySPpt21fUK_uTaksLZjfbcMB41AAvG"
+    url = "Your Discord Webhook here ☭"
     # message to send
     # something like:
     # (in embed)
     # nemoCheck(): 진관초등학교 컴퓨터실 컴퓨터 상태: 켜짐
     # 핑이 요청이 정상적으로 처리되었습니다.
     
-    webhook = Webhook.from_url('https://discord.com/api/webhooks/984793884498468894/Wgp-W0RVkJPLg6FVareuDWvu2aHanpLjBMl6dWySPpt21fUK_uTaksLZjfbcMB41AAvG', adapter=RequestsWebhookAdapter()) # Initializing webhook
+    webhook = Webhook.from_url(url, adapter=RequestsWebhookAdapter()) # Initializing webhook
     embed=discord.Embed(title="nemoCheck():", description="진관초등학교 컴퓨터실 컴퓨터 상태: 켜짐.", color=0xffffff)
     embed.add_field(name="핑이 요청이 정상적으로 처리되었습니다.", value="ddos() function을 시작합니다.", inline=False)
     embed.set_footer(text="공화주의 반란사회 @editor99 제공  @nerdsinspace() ∴ ʃʃ nerdsinspace/nemo")
